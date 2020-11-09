@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/pToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000B4A00"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_reply_black_24dp"
+        app:title="@string/app_name" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/header"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/download" />
+
+        <TextView
+            android:id="@+id/profName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profImg"
+            android:layout_centerHorizontal="true"
+            android:text="Fullname"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="email"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/prof_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_person_add"
+        android:drawablePadding="10dp"
+        android:padding="12dp"
+        android:text="Change Photo"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_suggestion"
+        android:drawablePadding="10dp"
+        android:padding="12dp"
+        android:text="Suggestions"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/prof_email_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:padding="12dp"
+        android:text="Verify Email"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+        android:drawablePadding="10dp"
+        android:padding="12dp"
+        android:text="Logout"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/draw_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/Senior"
+            android:icon="@drawable/ic_twotone_directions_walk_24"
+            android:title="Senior Citezen" />
+        <item
+            android:id="@+id/draw_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Account Settings" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_reply_black_24dp"
+            android:title="Logout" />
+
+    </group>
+
+    <item android:title="Certificates">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/brgy_clearance"
+                    android:icon="@drawable/ic_certificates"
+                    android:title="Clearance" />
+                <item
+                    android:id="@+id/Permits"
+                    android:icon="@drawable/ic_certificates"
+                    android:title="Permits" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Feedback">
+
+        <menu>
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/ic_rate"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/report"
+                android:icon="@drawable/ic_report"
+                android:title="Report Problem" />
+        </menu>
+
+    </item>
+
+</menu>

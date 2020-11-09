@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "671209274787",
+    "firebase_url": "https://kamapp-fb9d7.firebaseio.com",
+    "project_id": "kamapp-fb9d7",
+    "storage_bucket": "kamapp-fb9d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671209274787:android:565ec8ae479148ab10ae16",
+        "android_client_info": {
+          "package_name": "com.example.finalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671209274787-7oc8n73h0tupgioplks51d30n871890e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finalapp",
+            "certificate_hash": "d562e70563bd183548a4a965ee0f755604f67d14"
+          }
+        },
+        {
+          "client_id": "671209274787-ecm63l1l2o67vsb5jkohn39c5jhd5d4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtKm6bjjZQoxniqtN1u6KaSieaeDMGDi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671209274787-ecm63l1l2o67vsb5jkohn39c5jhd5d4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
