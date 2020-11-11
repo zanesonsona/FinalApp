@@ -25,6 +25,8 @@
             android:id="@+id/profImg"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:padding="2dp"
+            android:background="@drawable/imgborder"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
             android:src="@drawable/download" />

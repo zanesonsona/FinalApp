@@ -8,7 +8,7 @@
             android:title="Home" />
         <item
             android:id="@+id/Senior"
-            android:icon="@drawable/ic_twotone_directions_walk_24"
+            android:icon="@drawable/ic_baseline_elderly_24"
             android:title="Senior Citezen" />
         <item
             android:id="@+id/draw_settings"

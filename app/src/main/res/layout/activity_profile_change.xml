@@ -24,6 +24,8 @@
         android:layout_width="290dp"
         android:layout_height="290dp"
         android:layout_margin="14dp"
+        android:padding="2dp"
+        android:background="@drawable/imgborder"
         android:layout_marginTop="75dp"
         android:src="@drawable/trial"
         app:layout_constraintBottom_toBottomOf="parent"
