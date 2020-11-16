@@ -192,8 +192,6 @@ public class RegistrationPage extends AppCompatActivity implements View.OnClickL
                                             RegisterUser registerRef = new RegisterUser(name,gender,age,birthday,address,Email,downloadUrl.toString());
                                             db.collection("Users")
                                                     .document(Email)
-                                                    .collection("User Info")
-                                                    .document(Email)
                                                     .set(registerRef);
                                         }
                                     });
@@ -274,8 +272,6 @@ public class RegistrationPage extends AppCompatActivity implements View.OnClickL
 
                                             RegisterUser registerRef = new RegisterUser(name,gender,age,birthday,address,Email,downloadUrl.toString());
                                             db.collection("Users")
-                                                    .document(Email)
-                                                    .collection("User Info")
                                                     .document(Email)
                                                     .set(registerRef);
 
