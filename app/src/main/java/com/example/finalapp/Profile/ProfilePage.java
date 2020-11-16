@@ -113,8 +113,7 @@ public class ProfilePage extends AppCompatActivity {
 
         String currentEmail = mAuth.getCurrentUser().getEmail();
         email.setText(currentEmail);
-        DocumentReference reference = firestore.collection("Users").document(currentEmail)
-                .collection("User Info").document(currentEmail);
+        DocumentReference reference = firestore.collection("Users").document(currentEmail);
         reference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {

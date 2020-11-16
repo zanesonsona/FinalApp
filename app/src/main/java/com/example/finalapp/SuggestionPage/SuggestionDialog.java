@@ -125,8 +125,7 @@ public class SuggestionDialog extends AppCompatDialogFragment {
         });
 
         String currentEmail = mAuth.getCurrentUser().getEmail();
-        DocumentReference reference = firestore.collection("Users").document(currentEmail)
-                .collection("User Info").document(currentEmail);
+        DocumentReference reference = firestore.collection("Users").document(currentEmail);
         reference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -156,6 +155,14 @@ public class SuggestionDialog extends AppCompatDialogFragment {
                     String suggest = s_suggest.getText().toString();
 
                     SuggestionRef.add(new SuggestUpload(downloadUrl.toString(), name, date, suggest, s_likes));
+
+                    String user = mAuth.getCurrentUser().getEmail();
+
+                    CollectionReference user_suggest = db.collection("Users")
+                            .document(user)
+                            .collection("Suggestions");
+
+                    user_suggest.add(new SuggestUpload(downloadUrl.toString(), name, date, suggest, s_likes));
 
                 }
             }

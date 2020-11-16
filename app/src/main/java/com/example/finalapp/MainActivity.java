@@ -154,8 +154,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         String currentEmail = mAuth.getCurrentUser().getEmail();
         head_mail.setText(currentEmail);
-        DocumentReference reference = firestore.collection("Users").document(currentEmail)
-                .collection("User Info").document(currentEmail);
+        DocumentReference reference = firestore.collection("Users").document(currentEmail);
         reference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
