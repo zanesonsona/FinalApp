@@ -197,8 +197,8 @@ public class SuggestionDialog extends AppCompatDialogFragment {
     public void DateSetter() {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+8"));
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy MMM dd, EEEE hh:mm a");
-        Date CurretDate = new Date();
-        String currentDate = simpleDateFormat.format(CurretDate);
+        Date CurrentDate = new Date();
+        String currentDate = simpleDateFormat.format(CurrentDate);
         s_Date.setText(currentDate);
     }
 }
