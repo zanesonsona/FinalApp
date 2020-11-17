@@ -1,4 +1,4 @@
-package com.example.finalapp.Fragments;
+package com.example.finalapp.HomePage;
 
 
 import android.os.Bundle;

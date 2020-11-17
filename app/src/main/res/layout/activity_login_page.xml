@@ -68,6 +68,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
+    <CheckBox
+        android:id="@+id/keepme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep me Sign-in"
+        android:textSize="14sp"
+        android:textColor="#15751B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
     <Button
         android:id="@+id/login"
         android:layout_width="wrap_content"
@@ -97,7 +109,7 @@
         android:textColor="#2DA835"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass" />
 

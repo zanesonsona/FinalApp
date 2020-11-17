@@ -8,10 +8,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
-import android.graphics.Color;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -20,7 +19,7 @@ import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.finalapp.Fragments.DashboardFragment;
-import com.example.finalapp.Fragments.HomeFragment;
+import com.example.finalapp.HomePage.HomeFragment;
 import com.example.finalapp.Fragments.InquiresFragment;
 import com.example.finalapp.Profile.ProfilePage;
 import com.example.finalapp.SuggestionPage.SuggestionFragment;
@@ -200,6 +199,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.logout:
+                SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("keep","false");
+                editor.apply();
+                mAuth.signOut();
                 startActivity(new Intent(MainActivity.this, LoginPage.class));
                 finish();
         }
